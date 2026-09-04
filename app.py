@@ -1,305 +1,285 @@
 import streamlit as st
-import base64
 
+# ==============================
+# KONFIGURASI HALAMAN
+# ==============================
 st.set_page_config(
-    page_title="Halawwww Ceyyyy 🤎",
-    page_icon="🤎",
-    layout="centered",
-    initial_sidebar_state="collapsed",
+    page_title="halawwww ceyyyy 🤎",
+    page_icon="🌽",
+    layout="centered"
 )
 
-# =========================================================
-# FOTO
-# =========================================================
-# Letakkan foto dengan nama "1001279694.jpg"
-# di folder yang sama dengan file Python ini.
-
-with open("1001279694.jpg", "rb") as f:
-    photo = base64.b64encode(f.read()).decode()
-
-
-# =========================================================
+# ==============================
 # CSS
-# =========================================================
+# ==============================
 st.markdown("""
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+    /* Background utama */
+    .stApp {
+        background-color: #3B2418;
+        color: #E8C39E;
+    }
 
-.stApp {
-    background: #3A2118;
-    color: #F4E5D7;
-}
+    /* Hilangkan header Streamlit */
+    header {
+        visibility: hidden;
+    }
 
-[data-testid="stHeader"] {
-    background: transparent;
-}
-
-.block-container {
-    max-width: 850px;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-}
-
-/* =========================
-   JUDUL
-========================= */
-
-.main-title {
-    text-align: center;
-    color: #C99B7A;
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3rem, 10vw, 6rem);
-    font-weight: 700;
-    line-height: 1.05;
-    margin-top: 15vh;
-    margin-bottom: 25px;
-}
-
-/* =========================
-   SUBTITLE
-========================= */
-
-.subtitle {
-    text-align: center;
-    color: #F1D9C8;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-/* =========================
-   FOTO
-========================= */
-
-.photo-card {
-    background: #F0DED0;
-    padding: 12px;
-    border-radius: 22px;
-    box-shadow: 0 12px 35px rgba(0,0,0,.28);
-    margin: 20px auto 30px;
-    max-width: 680px;
-}
-
-.photo-card img {
-    width: 100%;
-    display: block;
-    border-radius: 15px;
-}
-
-/* =========================
-   CERITA
-========================= */
-
-.story {
-    background: #F0DED0;
-    color: #3A2118;
-    padding: 30px;
-    border-radius: 22px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.05rem;
-    line-height: 1.85;
-    box-shadow: 0 10px 30px rgba(0,0,0,.20);
-}
-
-.story-title {
-    text-align: center;
-    color: #7D4E3B;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.back-text {
-    text-align: center;
-    color: #C99B7A;
-    font-family: 'DM Sans', sans-serif;
-    margin-top: 30px;
-}
-
-/* =========================
-   BUTTON
-========================= */
-
-.stButton > button {
-    width: 100%;
-    border: none;
-    border-radius: 999px;
-    background: #C99B7A;
-    color: #3A2118;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    padding: .8rem 1.2rem;
-    transition: .2s ease;
-}
-
-.stButton > button:hover {
-    background: #E0B99D;
-    transform: translateY(-2px);
-}
-
-/* =========================
-   HP
-========================= */
-
-@media (max-width: 600px) {
-
+    /* Container */
     .block-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        max-width: 850px;
     }
 
-    .main-title {
-        margin-top: 10vh;
+    /* Judul utama */
+    .judul {
+        text-align: center;
+        color: #D9A679;
+        font-size: 65px;
+        font-weight: 800;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
     }
 
-    .story {
-        padding: 22px 20px;
-        font-size: .98rem;
+    /* Subtitle */
+    .subjudul {
+        text-align: center;
+        color: #E8C39E;
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 45px;
     }
 
-}
+    /* Judul halaman kedua */
+    .judul-cerita {
+        color: #D9A679;
+        font-size: 42px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    /* Kotak cerita */
+    .cerita {
+        background-color: #4A2D20;
+        border: 2px solid #9C6B48;
+        border-radius: 25px;
+        padding: 35px;
+        color: #F0D1B2;
+        font-size: 18px;
+        line-height: 1.9;
+        text-align: justify;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    }
+
+    /* Tombol */
+    div.stButton > button {
+        width: 100%;
+        background-color: #C28B62;
+        color: #3B2418;
+        border: none;
+        border-radius: 20px;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    div.stButton > button:hover {
+        background-color: #D9A679;
+        color: #3B2418;
+        transform: scale(1.02);
+    }
+
+    /* Emoji */
+    .emoji {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
 
 </style>
 """, unsafe_allow_html=True)
 
 
-# =========================================================
+# ==============================
 # SESSION STATE
-# =========================================================
+# ==============================
+if "halaman" not in st.session_state:
+    st.session_state.halaman = 1
 
-if "page" not in st.session_state:
-    st.session_state.page = 1
 
+# ==============================
+# HALAMAN 1 - MENU UTAMA
+# ==============================
+if st.session_state.halaman == 1:
 
-# =========================================================
-# HALAMAN 1
-# =========================================================
-
-if st.session_state.page == 1:
+    st.markdown("<div class='emoji'>🌽🤎</div>", unsafe_allow_html=True)
 
     st.markdown(
-        """
-        <div class="main-title">
-            halawwww<br>
-            ceyyyy 🤎
-        </div>
-        """,
+        "<div class='judul'>halawwww ceyyyy</div>",
         unsafe_allow_html=True
     )
 
     st.markdown(
         """
-        <div class="subtitle">
-            pasti bingung yaa ini apa wkwk 🤭<br>
-            biar ga bingung kamu klik ini yaa ↓
+        <div class='subjudul'>
+        pasti bingung yaa ini apa wkwk 🤭<br>
+        biar ga bingung kamu klik ini yaa
         </div>
         """,
         unsafe_allow_html=True
     )
 
-    if st.button("🤎 klik ini buat lanjut 🤎"):
-        st.session_state.page = 2
+    st.write("")
+
+    if st.button("🤎 klik ini untuk lanjut 🤎"):
+        st.session_state.halaman = 2
         st.rerun()
 
 
-# =========================================================
-# HALAMAN 2
-# =========================================================
-
-else:
-
-    st.markdown(
-        """
-        <div class="main-title"
-             style="margin-top:2vh;font-size:3rem;">
-            halawwww ceyyyy 🤎
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # FOTO
-    st.markdown(
-        f"""
-        <div class="photo-card">
-            <img src="data:image/jpeg;base64,{photo}">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # CERITA
-    story = """
-halawww inii nama nya c yg poni nya patah patah kaya jagunggg 🤪🤪
-
-pasti orang asing denger nama nya aneh karna cuma satu huruf wkwk yaa itu dehh yang aku rasain pas kenalan di awal, kaya ngerasa aneh gitu "masa si nama nya c doangg" tapi emang itu panggilan nyaa.
-
-AKUUUUU..... MANGGILNYA BUKAN C TAPIIII CEYYYY 😭
-
-pengen beda aja si dari orang oranggg, soalnya aku gamau di samain sama orang.
-
-setelah 4 tahun apa ya kalo ga salah aku baru ketemu c lg, pokonyaa terakhir itu smp dehh abistu uda gaperna ketemu lg.
-
-TAPI.......
-
-aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
-
-ketemu lg nya juga aneh bgtt lg menurut akuu, masa ngajak si kk main tp ngajak aku jg!!??
-
-maksudnya gimana yakk, tp ternyata itu katanya spikk ajaa 🫢🫢
-
-truss besok nya main lg denggg, dan itu kayanya first time main ber2 gasi??
-
-iyaalaa mana perna kita mainn.
-
-setelah kurang lebih sebulan ga ke bogor lg, tp malem ituu c ajak aku ke bogor KE KINAA.
-
-disana aku banyak cerita c jugaa, aku suka deh c yappingg kaya seneng aja dengerin nyaa.
-
-udaa dehh dari main itu jadi dekett sm c.
-
-tp sebenernya aku tu takutt gitu klo di ajak main takutnya banyakk diem huhu.
-
-lebih ke takut salah ngomong gituu, sedangkan c anak nyaa ekstrovertt bgtttttt.
-
-apa aja, kayanya si yaa dia diem klo cengengg aja dehh hehe.
-
-soalnya c tu cengenggg 👎🏼👎🏼👎🏼👎🏼
-"""
-
-    story_html = "<br><br>".join(
-        paragraph.replace("\n", "<br>")
-        for paragraph in story.strip().split("\n\n")
-    )
+# ==============================
+# HALAMAN 2 - CERITA
+# ==============================
+elif st.session_state.halaman == 2:
 
     st.markdown(
-        f"""
-        <div class="story">
-
-            <div class="story-title">
-                🤎 sedikit cerita tentang cey 🤎
-            </div>
-
-            {story_html}
-
-        </div>
-        """,
+        "<div class='judul-cerita'>halawww c 👋🏻🌽</div>",
         unsafe_allow_html=True
     )
 
     st.markdown(
         """
-        <div class="back-text">
-            hehe segitu dulu ceritanyaaa 🫶🏻
+        <div class='cerita'>
+
+        halawww inii nama nya c yg poni nya patah patah kaya jagunggg 🤪🤪
+        pasti orang asing denger nama nya aneh karna cuma satu huruf wkwk.
+        yaa itu dehh yang aku rasain pas kenalan di awal, kaya ngerasa aneh gitu
+        <b>"masa si nama nya c doangg"</b> tapi emang itu panggilan nyaa.
+
+        <br><br>
+
+        AKUUUU..... MANGGILNYA BUKAN C TAPIIII
+        <b>CEYYYY</b> 😭🤎
+
+        pengen beda aja si dari orang oranggg, soalnya aku gamau di samain
+        sama orang.
+
+        <br><br>
+
+        setelah 4 tahun apa ya kalo ga salah aku baru ketemu c lg,
+        pokonyaa terakhir itu smp dehh abistu uda gaperna ketemu lg.
+
+        <br><br>
+
+        TAPI.......
+        aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
+
+        <br><br>
+
+        ketemu lg nya juga aneh bgtt lg menurut akuu,
+        masa ngajak si kk main tp ngajak aku jg!!??
+        maksudnya gimana yakk 😭
+
+        <br><br>
+
+        tp ternyata itu katanya spikk ajaa 🫢🫢
+        truss besok nya main lg denggg.
+
+        <br><br>
+
+        dan itu kayanya <b>first time main ber2</b> gasi??
+        iyaalaa mana perna kita mainn.
+
+        <br><br>
+
+        setelah kurang lebih sebulan ga ke bogor lg,
+        tp malem ituu c ajak aku ke bogor KE KINAA.
+
+        <br><br>
+
+        disana aku banyak cerita c jugaa.
+        aku suka deh c yappingg kaya seneng aja dengerin nyaa.
+
+        <br><br>
+
+        udaa dehh dari main itu jadi dekett sm c.
+
+        <br><br>
+
+        tp sebenernya aku tu takutt gitu klo di ajak main,
+        takutnya banyakk diem huhu 😭
+        lebih ke takut salah ngomong gituu.
+
+        <br><br>
+
+        sedangkan c anak nyaa ekstrovertt bgtttttt.
+        apa aja, kayanya si dia diem klo cengengg aja dehh hehe.
+
+        <br><br>
+
+        soalnya c tu <b>cengenggg</b> 👎🏼👎🏼👎🏼👎🏼
+
         </div>
         """,
         unsafe_allow_html=True
     )
 
-    if st.button("← balik lagi"):
-        st.session_state.page = 1
+    st.write("")
+    st.write("")
+
+    if st.button("🌽 lanjut lagi yukkk"):
+        st.session_state.halaman = 3
+        st.rerun()
+
+
+# ==============================
+# HALAMAN 3 - PENUTUP SEMENTARA
+# ==============================
+elif st.session_state.halaman == 3:
+
+    st.markdown(
+        "<div class='emoji'>🥹🤎🌽</div>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        "<div class='judul-cerita'>jadiii begitulah awalnya...</div>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <div class='cerita'>
+
+        ternyata dari yang awalnya cuma kenal satu huruf,
+        terus dipanggil beda sendiri jadi <b>ceyyyy</b>,
+        akhirnya malah jadi sedeket ini wkwkwk 🤎
+
+        <br><br>
+
+        lucu juga yaa kalo dipikir-pikir,
+        dari yang awalnya takut bakal banyak diem,
+        takut salah ngomong,
+        malah akhirnya bisa cerita banyak dan
+        betah dengerin c yappinggg 😭
+
+        <br><br>
+
+        dan ternyata...
+        perjalanan kita baru mulai dari sini 🌽🤎
+
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.write("")
+    st.write("")
+
+    if st.button("🤎 balik ke awal"):
+        st.session_state.halaman = 1
         st.rerun()
