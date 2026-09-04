@@ -236,6 +236,8 @@ elif st.session_state.page == 2:
     lebih ke takut salah ngomong aja si, sedangkan c anak nyaa ekstrovertt bgtttttt,
     kayanya si yaa dia diem klo lg crying aja dehh hehe soalnya c tu cengenggg
     👎🏼👎🏼👎🏼👎🏼
+
+    MAAF YAAA AKU AMBIL FOTO INIII DARI IG KAMU HEHEH
     """
 
     st.markdown(
@@ -309,13 +311,13 @@ elif st.session_state.page == 4:
     banget kan ngelewatin semuanyaaa? gapapaaa yaa, lagi lagi kata 'everything will be fine' nya keluar
     HAHAHAHAHAHAH. tapiii kamuuu gaa harus selaluuu kuat karnaaa setiapp orang pastii dilewatin
     badainya masing-masing yang bikin capeee banget yang bahkannn sampe
-    pengen nyerahhhh. tapii akum au bilang 'capee boleh nyerahh jangan' dan boeh untuk mengeuh,
+    pengen nyerahhhh. tapii aku mau bilang 'capee boleh nyerahh jangan' dan boleh untuk mengeluh,
     tapii setelah kamuu ngeluhh kamu perlu BANGKIT untuk semuanya dan dari
     semuanyaaa. eitssss, tapii walaupun kamuu berusaha bangkit kamu jugaa gabole lupaa
     sama istirahat yaa. akuu yakin banget setelah ini pasti banyak kejutan bahagiaaa yangg
     menghampiri kamuuu (trust me!). jadi kalooo bulan agustus ini sangat bad gapapa yaa semoga bulan selanjutnya
     bakal lebih baik lagii, aamiin. ini bukan akhir dari segalanya, gabole nyerahhh deh pokonyaaa tapii untuk
-    sedih dan nangiss itu gapapa bgtt. ayooo nangis buat luapin semua masalahnyaa, kalooo malem ini ada hujan turun
+    sedih dan nangiss itu gapapa bgtt. ayooo nangis buat luapin semua masalahnyaa, kalooo malam ini ada hujan turun
     di pipi kamuu tidak apa apaa kooo tapii besok harus lebih semangat lagi
     untuk menyambut bulan baruuuu huhuhuu. semuaaa masalahhh di bulan agustus dilupain duluuu yyyaaa?
     atauuu di selesain dengan cara damaii karna semua masalah pasti ada
