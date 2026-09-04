@@ -59,7 +59,18 @@ st.markdown("""
         font-size: 42px;
         font-weight: 800;
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
+    }
+
+    /* FOTO HALAMAN 2 */
+    .foto-cey {
+        display: block;
+        width: 75%;
+        max-width: 500px;
+        margin: 0 auto 35px auto;
+        border-radius: 25px;
+        border: 3px solid #9C6B48;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.30);
     }
 
     /* Kotak cerita */
@@ -117,7 +128,10 @@ if "halaman" not in st.session_state:
 # ==============================
 if st.session_state.halaman == 1:
 
-    st.markdown("<div class='emoji'>😾😾😾😾</div>", unsafe_allow_html=True)
+    st.markdown(
+        "<div class='emoji'>😾😾😾😾</div>",
+        unsafe_allow_html=True
+    )
 
     st.markdown(
         "<div class='judul'>halawwww ceyyyy</div>",
@@ -147,10 +161,26 @@ if st.session_state.halaman == 1:
 elif st.session_state.halaman == 2:
 
     st.markdown(
-        "<div class='judul-cerita'>halawww ceyyyyy </div>",
+        "<div class='judul-cerita'>halawww ceyyyyy</div>",
         unsafe_allow_html=True
     )
 
+    # ==============================
+    # FOTO
+    # ==============================
+    st.markdown(
+        """
+        <img 
+            class="foto-cey"
+            src="https://i.ibb.co.com/xxxxx/Cam-Scanner-04-09-2026-22-01.jpg"
+        >
+        """,
+        unsafe_allow_html=True
+    )
+
+    # ==============================
+    # CERITA
+    # ==============================
     st.markdown(
         """
         <div class='cerita'>
@@ -159,25 +189,31 @@ elif st.session_state.halaman == 2:
         pasti orang- orang asing denger nama nya aneh karna cuma satu huruf wkwk.
         yaa itu dehh yang aku rasain pas kenalan di awal, kaya ngerasa aneh gitu
         <b>"*masa si nama nya c doangg*"</b> tapi emang itu panggilan nyaa.
+
         <br><br>
 
         AKUUUU..... MANGGILNYA BUKAN C TAPIIII
         <b>CEYYYY</b> pengen beda aja si dari orang oranggg, soalnya aku gamau di samain
         sama orang.
+
         <br><br>
-        
+
         setelah 4 tahun apa ya kalo ga salah aku baru ketemu c lg,
         pokonyaa terakhir itu smp dehh abistu uda gaperna ketemu lg.
         TAPI....... aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
         ketemu lg nya juga aneh bgtt lg menurut akuu, masa ngajak si kk main tp ngajak aku jg!!??
         maksudnya gimana yakk??? tp ternyata itu katanya spikk ajaa 🆙🆙
+
         truss besok nya main lg denggg, dan itu kayanya first time main ber2 gasi??
         iyaalaa mana perna kita mainn. setelah kurang lebih sebulan ga ke bogor lg,
         tp malem ituu c ajak aku ke bogor KE KINAA. disana aku banyak cerita c jugaa.
+
         aku suka deh c yappingg kaya seneng aja dengerin nyaa, udaa dehh dari main itu jadi dekett sm c,
         tp sebenernya aku tu takutt gitu klo di ajak main, takutnya banyakk diem huhu 😭
+
         lebih ke takut salah ngomong gituu, sedangkan c anak nyaa ekstrovertt bgtttttt,
-        apa aja, kayanya si dia diem klo cengengg aja dehh hehe, soalnya c tu <b>cengenggg</b> 👎🏼👎🏼👎🏼👎🏼
+        apa aja, kayanya si dia diem klo cengengg aja dehh hehe,
+        soalnya c tu <b>cengenggg</b> 👎🏼👎🏼👎🏼👎🏼
 
         </div>
         """,
