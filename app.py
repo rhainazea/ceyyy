@@ -481,8 +481,8 @@ elif st.session_state.page == 7:
 
     teks_terakhir = """
     terimakasih yaa sudah mau buka link ini dan baca sampai halaman terakhir.
-    maaf ya kalo kata-kata aku di atas ada yang berulang-ulang. ceyyyy hidup lebihh lama yaaa.
-    BABAYYYYY SEEE UUU 👋🏻👋🏻👋🏻
+    maaf ya kalo kata-kata aku di atas ada yang berulang-ulang. aku gada maksud apa apa yaa 
+    cuma aku mau kasi ini aja, ceyyyy hidup lebihh lama yaaa. BABAYYYYY SEEE UUU 👋🏻👋🏻👋🏻
     """
 
     st.markdown(
