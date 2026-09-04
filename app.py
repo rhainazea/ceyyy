@@ -136,7 +136,7 @@ if st.session_state.halaman == 1:
 
     st.write("")
 
-    if st.button("📍"):
+    if st.button("➡️"):
         st.session_state.halaman = 2
         st.rerun()
 
@@ -187,7 +187,7 @@ elif st.session_state.halaman == 2:
     st.write("")
     st.write("")
 
-    if st.button("📍"):
+    if st.button("➡️"):
         st.session_state.halaman = 3
         st.rerun()
 
@@ -236,6 +236,6 @@ elif st.session_state.halaman == 3:
     st.write("")
     st.write("")
 
-    if st.button("📍Balik lagi ke awal"):
+    if st.button("➡️"):
         st.session_state.halaman = 1
         st.rerun()
