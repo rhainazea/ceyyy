@@ -216,17 +216,15 @@ elif st.session_state.page == 2:
     )
 
     teks_halaman_2 = """
-    halawww inii nama nya c yg poni nya patah patah kaya jagunggg 🤪🤪
+    halawww kenalin inii nama nya c yg poni nya patah patah kaya jagunggg 🤪🤪
     pasti orang-orang asing denger nama nya aneh karna cuma satu huruf wkwk
     yaa itu dehh yang aku rasain pas kenalan di awal, kaya ngerasa aneh gitu
     "masa si nama nya c doangg" tapi emang itu panggilan nyaa.
 
-    AKUUUUUU..... manggilnya bukan C TAPIIII CEYYYY, pengen beda aja si dari
-    orang oranggg, soalnya aku gamau di samain sama orang.
+    AKUUUUUU..... manggilnya bukan C TAPIIII CEYYYY, pengen beda aja si dari orang oranggg, soalnya aku gamau di samain sama orang.
 
     setelah 4 tahun apa ya kalo ga salah aku baru ketemu c lg, pokonyaa
-    terakhir itu smp dehh abistu uda gaperna ketemu lg, TAPI.......
-    aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
+    terakhir itu smp dehh abistu uda gaperna ketemu lg, TAPI....... aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
 
     ketemu lg nya juga aneh bgtt lg menurut akuu, masa ngajak si kk main tp
     ngajak aku jg!!?? maksudnya gimana yakk, tp ternyata itu katanya spikk ajaa
@@ -282,7 +280,7 @@ elif st.session_state.page == 3:
     )
 
     st.markdown(
-        '<div class="footer">➡️</div>',
+        '<div class="footer"></div>',
         unsafe_allow_html=True
     )
 
