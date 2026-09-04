@@ -4,8 +4,8 @@ import streamlit as st
 # KONFIGURASI HALAMAN
 # ==============================
 st.set_page_config(
-    page_title="halawwww ceyyyy 🤎",
-    page_icon="🌽",
+    page_title="halawwww ceyyyy 👋🏻👋🏻👋🏻",
+    page_icon="⁉️",
     layout="centered"
 )
 
@@ -117,7 +117,7 @@ if "halaman" not in st.session_state:
 # ==============================
 if st.session_state.halaman == 1:
 
-    st.markdown("<div class='emoji'>🌽🤎</div>", unsafe_allow_html=True)
+    st.markdown("<div class='emoji'>📍</div>", unsafe_allow_html=True)
 
     st.markdown(
         "<div class='judul'>halawwww ceyyyy</div>",
@@ -127,7 +127,7 @@ if st.session_state.halaman == 1:
     st.markdown(
         """
         <div class='subjudul'>
-        pasti bingung yaa ini apa wkwk 🤭<br>
+        pasti bingung yaa ini apa wkwk <br>
         biar ga bingung kamu klik ini yaa
         </div>
         """,
@@ -136,7 +136,7 @@ if st.session_state.halaman == 1:
 
     st.write("")
 
-    if st.button("🤎 klik ini untuk lanjut 🤎"):
+    if st.button("📍"):
         st.session_state.halaman = 2
         st.rerun()
 
@@ -147,7 +147,7 @@ if st.session_state.halaman == 1:
 elif st.session_state.halaman == 2:
 
     st.markdown(
-        "<div class='judul-cerita'>halawww c 👋🏻🌽</div>",
+        "<div class='judul-cerita'>halawww ceyyyyy </div>",
         unsafe_allow_html=True
     )
 
@@ -156,72 +156,28 @@ elif st.session_state.halaman == 2:
         <div class='cerita'>
 
         halawww inii nama nya c yg poni nya patah patah kaya jagunggg 🤪🤪
-        pasti orang asing denger nama nya aneh karna cuma satu huruf wkwk.
+        pasti orang- orang asing denger nama nya aneh karna cuma satu huruf wkwk.
         yaa itu dehh yang aku rasain pas kenalan di awal, kaya ngerasa aneh gitu
-        <b>"masa si nama nya c doangg"</b> tapi emang itu panggilan nyaa.
-
+        <b>"*masa si nama nya c doangg*"</b> tapi emang itu panggilan nyaa.
         <br><br>
 
         AKUUUU..... MANGGILNYA BUKAN C TAPIIII
-        <b>CEYYYY</b> 😭🤎
-
-        pengen beda aja si dari orang oranggg, soalnya aku gamau di samain
+        <b>CEYYYY</b> pengen beda aja si dari orang oranggg, soalnya aku gamau di samain
         sama orang.
-
         <br><br>
-
+        
         setelah 4 tahun apa ya kalo ga salah aku baru ketemu c lg,
         pokonyaa terakhir itu smp dehh abistu uda gaperna ketemu lg.
-
-        <br><br>
-
-        TAPI.......
-        aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
-
-        <br><br>
-
-        ketemu lg nya juga aneh bgtt lg menurut akuu,
-        masa ngajak si kk main tp ngajak aku jg!!??
-        maksudnya gimana yakk 😭
-
-        <br><br>
-
-        tp ternyata itu katanya spikk ajaa 🫢🫢
-        truss besok nya main lg denggg.
-
-        <br><br>
-
-        dan itu kayanya <b>first time main ber2</b> gasi??
-        iyaalaa mana perna kita mainn.
-
-        <br><br>
-
-        setelah kurang lebih sebulan ga ke bogor lg,
-        tp malem ituu c ajak aku ke bogor KE KINAA.
-
-        <br><br>
-
-        disana aku banyak cerita c jugaa.
-        aku suka deh c yappingg kaya seneng aja dengerin nyaa.
-
-        <br><br>
-
-        udaa dehh dari main itu jadi dekett sm c.
-
-        <br><br>
-
-        tp sebenernya aku tu takutt gitu klo di ajak main,
-        takutnya banyakk diem huhu 😭
-        lebih ke takut salah ngomong gituu.
-
-        <br><br>
-
-        sedangkan c anak nyaa ekstrovertt bgtttttt.
-        apa aja, kayanya si dia diem klo cengengg aja dehh hehe.
-
-        <br><br>
-
-        soalnya c tu <b>cengenggg</b> 👎🏼👎🏼👎🏼👎🏼
+        TAPI....... aku suka stalk akun scc nya sii di akun ituu ✌🏼✌🏼
+        ketemu lg nya juga aneh bgtt lg menurut akuu, masa ngajak si kk main tp ngajak aku jg!!??
+        maksudnya gimana yakk??? tp ternyata itu katanya spikk ajaa 🆙🆙
+        truss besok nya main lg denggg, dan itu kayanya first time main ber2 gasi??
+        iyaalaa mana perna kita mainn. setelah kurang lebih sebulan ga ke bogor lg,
+        tp malem ituu c ajak aku ke bogor KE KINAA. disana aku banyak cerita c jugaa.
+        aku suka deh c yappingg kaya seneng aja dengerin nyaa, udaa dehh dari main itu jadi dekett sm c,
+        tp sebenernya aku tu takutt gitu klo di ajak main, takutnya banyakk diem huhu 😭
+        lebih ke takut salah ngomong gituu, sedangkan c anak nyaa ekstrovertt bgtttttt,
+        apa aja, kayanya si dia diem klo cengengg aja dehh hehe, soalnya c tu <b>cengenggg</b> 👎🏼👎🏼👎🏼👎🏼
 
         </div>
         """,
@@ -231,7 +187,7 @@ elif st.session_state.halaman == 2:
     st.write("")
     st.write("")
 
-    if st.button("🌽 lanjut lagi yukkk"):
+    if st.button("📍"):
         st.session_state.halaman = 3
         st.rerun()
 
@@ -247,7 +203,7 @@ elif st.session_state.halaman == 3:
     )
 
     st.markdown(
-        "<div class='judul-cerita'>jadiii begitulah awalnya...</div>",
+        "<div class='judul-cerita'>.</div>",
         unsafe_allow_html=True
     )
 
