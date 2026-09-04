@@ -273,9 +273,9 @@ elif st.session_state.page == 3:
     st.markdown(
         '''
         <div class="">
-        “aku gatau kamu suka di kasi long teks atau tidak,<br>
+        aku gatau kamu suka di kasi long teks atau tidak,<br>
         tapi berhubung love language aku words of affirmation<br>
-        jadi aku mau kasi sedikit afirmasi buat kamu”
+        jadi aku mau kasi sedikit afirmasi buat kamu
         </div>
         ''',
         unsafe_allow_html=True
@@ -372,7 +372,7 @@ elif st.session_state.page == 5:
     huhu aku mau say sorry yaa kalo kemarin-kemarin ada kata kata aku yang
     ga enak atau ada yang salah. makasii yaa uda sempet ajak aku main dan mau sedikit cerita tentang kamu
     ke aku, ya walaupun mungkin itu ga sampe 5% nya, tapi gapapa. makasi juga ya uda mau dengerin aku kemarin dan maaf kalo ternyata ada
-    satu dan lain hal yang bikin kamu ga nyaman. aku Cuma mau bilang Makasi dan maa aja koo 🤎
+    satu dan lain hal yang bikin kamu ga nyaman. aku Cuma mau bilang Makasi dan maaF aja koo 
     """
 
     st.markdown(
@@ -432,7 +432,7 @@ elif st.session_state.page == 6:
         semoga selalu seperti itu selalu. oiya mau kemana hari ini?
         Kalo mau keluar hati-hati jangan kebut-kebut. aku mau ingetin kamu buat jangan lupa minum air putih‼️‼️
         jangan sering-sering pod sama rokonyaa yaaa. yauda semangattt yaa untuk hari ini semoga hari ini semua orang bisa
-        bersahabat dengan kamu 🤎
+        bersahabat dengan kamu 
         """
 
         st.markdown(
