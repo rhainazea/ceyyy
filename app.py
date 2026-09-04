@@ -117,7 +117,7 @@ if "halaman" not in st.session_state:
 # ==============================
 if st.session_state.halaman == 1:
 
-    st.markdown("<div class='emoji'>📍</div>", unsafe_allow_html=True)
+    st.markdown("<div class='emoji'>😾😾😾😾</div>", unsafe_allow_html=True)
 
     st.markdown(
         "<div class='judul'>halawwww ceyyyy</div>",
@@ -198,7 +198,7 @@ elif st.session_state.halaman == 2:
 elif st.session_state.halaman == 3:
 
     st.markdown(
-        "<div class='emoji'>🥹🤎🌽</div>",
+        "<div class='emoji'></div>",
         unsafe_allow_html=True
     )
 
@@ -236,6 +236,6 @@ elif st.session_state.halaman == 3:
     st.write("")
     st.write("")
 
-    if st.button("🤎 balik ke awal"):
+    if st.button("📍Balik lagi ke awal"):
         st.session_state.halaman = 1
         st.rerun()
