@@ -127,7 +127,7 @@ if st.session_state.halaman == 1:
     st.markdown(
         """
         <div class='subjudul'>
-        pasti bingung yaa ini apa wkwk <br>
+        kaget yaa dan pasti bingung yaa ini apa wkwk <br>
         biar ga bingung kamu klik ini yaa
         </div>
         """,
