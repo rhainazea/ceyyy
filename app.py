@@ -59,18 +59,7 @@ st.markdown("""
         font-size: 42px;
         font-weight: 800;
         text-align: center;
-        margin-bottom: 30px;
-    }
-
-    /* FOTO HALAMAN 2 */
-    .foto-cey {
-        display: block;
-        width: 75%;
-        max-width: 500px;
-        margin: 0 auto 35px auto;
-        border-radius: 25px;
-        border: 3px solid #9C6B48;
-        box-shadow: 0px 8px 20px rgba(0,0,0,0.30);
+        margin-bottom: 35px;
     }
 
     /* Kotak cerita */
@@ -110,6 +99,13 @@ st.markdown("""
         text-align: center;
         font-size: 35px;
         margin-bottom: 10px;
+    }
+
+    /* Foto halaman 2 */
+    .foto {
+        border-radius: 25px;
+        overflow: hidden;
+        margin-bottom: 35px;
     }
 
 </style>
@@ -168,19 +164,19 @@ elif st.session_state.halaman == 2:
     # ==============================
     # FOTO
     # ==============================
-    st.markdown(
-        """
-        <img 
-            class="foto-cey"
-            src="https://i.ibb.co.com/xxxxx/Cam-Scanner-04-09-2026-22-01.jpg"
-        >
-        """,
-        unsafe_allow_html=True
+
+    st.image(
+        "https://cdn.phototourl.com/free/2026-09-04-299e4086-352e-4282-9782-80f5f9a18b6a.jpg",
+        use_container_width=True
     )
+
+    st.write("")
+    st.write("")
 
     # ==============================
     # CERITA
     # ==============================
+
     st.markdown(
         """
         <div class='cerita'>
@@ -205,13 +201,19 @@ elif st.session_state.halaman == 2:
         maksudnya gimana yakk??? tp ternyata itu katanya spikk ajaa 🆙🆙
 
         truss besok nya main lg denggg, dan itu kayanya first time main ber2 gasi??
-        iyaalaa mana perna kita mainn. setelah kurang lebih sebulan ga ke bogor lg,
-        tp malem ituu c ajak aku ke bogor KE KINAA. disana aku banyak cerita c jugaa.
+        iyaalaa mana perna kita mainn.
 
-        aku suka deh c yappingg kaya seneng aja dengerin nyaa, udaa dehh dari main itu jadi dekett sm c,
-        tp sebenernya aku tu takutt gitu klo di ajak main, takutnya banyakk diem huhu 😭
+        setelah kurang lebih sebulan ga ke bogor lg,
+        tp malem ituu c ajak aku ke bogor KE KINAA.
+        disana aku banyak cerita c jugaa.
 
-        lebih ke takut salah ngomong gituu, sedangkan c anak nyaa ekstrovertt bgtttttt,
+        aku suka deh c yappingg kaya seneng aja dengerin nyaa,
+        udaa dehh dari main itu jadi dekett sm c,
+        tp sebenernya aku tu takutt gitu klo di ajak main,
+        takutnya banyakk diem huhu 😭
+
+        lebih ke takut salah ngomong gituu,
+        sedangkan c anak nyaa ekstrovertt bgtttttt,
         apa aja, kayanya si dia diem klo cengengg aja dehh hehe,
         soalnya c tu <b>cengenggg</b> 👎🏼👎🏼👎🏼👎🏼
 
